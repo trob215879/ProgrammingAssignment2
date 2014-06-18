@@ -1,4 +1,4 @@
-## Create a "CacheMatrix" that will cache a matrix and its inverse
+## Create a "CacheMatrix" that will cache a matrix and its inverse.
 
 ## makeCacheMatrix stores a given matrix, and also its inverse if the function calculated it already.
 makeCacheMatrix <- function(x = matrix()) {
@@ -6,7 +6,8 @@ makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL  
   
   
-  ## Allows the user to change the value of the original matrix, then reset its inverse to NULL
+  ## Allows the user to change the value of the original matrix, then reset its
+  ## inverse to NULL
   set <- function(matrix) {
     x <<- matrix
     inv <<- NULL
