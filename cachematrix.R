@@ -1,6 +1,14 @@
-## Create a "CacheMatrix" that will cache a matrix and its inverse.
+###############################################################################
+## "CacheMatrix.R" contains 2 functions.  
+## "makeCacheMatrix" function creates a matrix object and stores its inverse if 
+##  calculated.
+## "cacheSolve" function creates a the inverse matrix of the matrix object 
+##  created by "makeCacheMatrix"
+## "makeCacheMatrix" function stores a given matrix, and also its inverse if 
+##  the function calculated it already.
+###############################################################################
 
-## makeCacheMatrix stores a given matrix, and also its inverse if the function calculated it already.
+## "makeCacheMatrix" function stores a given matrix and its inverse.  
 makeCacheMatrix <- function(x = matrix()) {
   ## Initializes Inverse Matrix to NULL
   inv <- NULL  
@@ -33,7 +41,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## CacheSolve computes the inverse of the "CacheMatrix" returned by `
+## makeCacheMatrix` above.
 
 cacheSolve <- function(x, ...) {
   ## Gets the value of the inverse
